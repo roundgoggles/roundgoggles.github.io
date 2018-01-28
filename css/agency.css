@@ -65,11 +65,11 @@ section {
     box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important; }
 
 ::-moz-selection {
-  background: lightgreen;
+  background: #9cc1f3;
   text-shadow: none; }
 
 ::selection {
-  background: lightgreen;
+  background: #9cc1f3;
   text-shadow: none; }
 
 img::selection {
@@ -79,7 +79,7 @@ img::-moz-selection {
   background: transparent; }
 
 body {
-  -webkit-tap-highlight-color: lightgreen; }
+  -webkit-tap-highlight-color: #9cc1f3; }
 
 #mainNav {
   background-color: transparent; }
@@ -96,7 +96,7 @@ body {
     color: #F9F9F9;
     font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, cursive; }
     #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-      color: lightgreen; }
+      color: #9cc1f3; }
   #mainNav .navbar-nav .nav-item .nav-link {
     font-size: 90%;
     font-weight: 400;
@@ -105,7 +105,7 @@ body {
     color: white;
     font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
     #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-      color: lightgreen; }
+      color: #9cc1f3; }
 
 @media (min-width: 992px) {
   #mainNav {
@@ -129,19 +129,18 @@ body {
         padding: 12px 0; } }
 
 header.masthead {
-  text-align: center;
-  color: white;
-  background-image: url("../img/overlay.png"), url("../img/header-bg.jpg");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
+    background-attachment: scroll,  scroll, fixed;
+    background-image: url(../img/top-3200.svg), url(../img/overlay.png), url(../img/header-bg.jpg);
+    background-position: bottom center, top left, center center;
+    background-repeat: repeat-x,  repeat, no-repeat;
+    background-size: 3200px 460px,  auto, cover;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 10em 0 20em 0;
+    position: relative;
+    text-align: center; }
   header.masthead .intro-text {
-    padding-top: 150px;
-    padding-bottom: 200px; }
+    padding-top: 7px;
+    padding-bottom: 5px; }
     header.masthead .intro-text .intro-lead-in {
       font-size: 22px;
       color: #d9d9d9;
@@ -164,8 +163,8 @@ header.masthead {
 
 @media (min-width: 768px) {
   header.masthead .intro-text {
-    padding-top: 200px;
-    padding-bottom: 300px; }
+    padding-top: 30px;
+    padding-bottom: 20px; }
     header.masthead .intro-text .intro-lead-in {
       font-size: 40px;
       line-height: 40px;
@@ -211,7 +210,7 @@ header.masthead {
       -moz-transition: all ease 0.5s;
       transition: all ease 0.5s;
       opacity: 0;
-      background: rgba(250, 250, 250, 0.6); }
+      background: rgba(30, 50, 70, 0.7); }
       #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
         opacity: 1; }
       #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
@@ -224,7 +223,8 @@ header.masthead {
         text-align: center;
         color: #212529; }
         #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
-          margin-top: -12px; }
+          margin-top: -12px;
+          color: rgba(255,255,255,0.8); }
         #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
         #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
           margin: 0; }
@@ -456,10 +456,10 @@ header.masthead {
     margin-top: 0; }
 
 section#contact {
-  background-color: #212529;
-  background-image: url("../img/map-image.png");
-  background-repeat: no-repeat;
-  background-position: center; }
+  background-image:url(../img/overlay.png), url(../img/contact-image.jpg);
+  background-repeat: repeat, no-repeat;
+  background-position: auto, center;
+  background-attachment: fixed, fixed; }
   section#contact .section-heading {
     color: #fff; }
   section#contact .form-group {
@@ -524,4 +524,4 @@ ul.social-buttons {
     outline: none;
     background-color: #212529; }
     ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
-      background-color: lightgreen; }
+      background-color: #8badda; }
