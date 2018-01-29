@@ -130,7 +130,7 @@ body {
 
 header.masthead {
     background-attachment: scroll,  scroll, fixed;
-    background-image: url(../img/top-3200.svg), url(../img/overlay.png), url(../img/header-sm.jpg);
+    background-image: url(../img/top-3200.svg), url(../img/overlay.png), url(../img/header-bg.jpg);
     background-position: bottom center, top left, center center;
     background-repeat: repeat-x,  repeat, no-repeat;
     background-size: 3200px 460px,  auto, cover;
@@ -163,32 +163,20 @@ header.masthead {
       font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
 @media (min-width: 768px) {
-  header.masthead {
-    background-attachment: scroll,  scroll, fixed;
-    background-image: url(../img/top-3200.svg), url(../img/overlay.png), url(../img/header-bg.jpg);
-    background-position: bottom center, top left, center center;
-    background-repeat: repeat-x,  repeat, no-repeat;
-    background-size: 3200px 460px,  auto, cover;
-    color: rgba(255, 255, 255, 0.8);
-    padding: 10em 0 20em 0;
-    position: relative;
-    text-align: center;
-  }
-
-    header.masthead .intro-text {
-      padding-top: 30px;
-      padding-bottom: 20px; }
-      header.masthead .intro-text .intro-lead-in {
-        font-size: 40px;
-        line-height: 40px;
-        margin-bottom: 25px;
-        font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
-        header.masthead .intro-text .intro-heading {
-          font-size: 80px;
-          font-weight: 700;
-          line-height: 75px;
-          margin-bottom: 20px;
-          font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; } }
+  header.masthead .intro-text {
+    padding-top: 30px;
+    padding-bottom: 20px; }
+    header.masthead .intro-text .intro-lead-in {
+      font-size: 40px;
+      line-height: 40px;
+      margin-bottom: 25px;
+      font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+      header.masthead .intro-text .intro-heading {
+        font-size: 80px;
+        font-weight: 700;
+        line-height: 75px;
+        margin-bottom: 20px;
+        font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; } }
 
 .service-heading {
   letter-spacing: 4px;
