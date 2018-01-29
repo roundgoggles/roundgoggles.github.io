@@ -24,9 +24,17 @@
     <link href="css/agency.css" rel="stylesheet">
     <link href="css/mine.css" rel="stylesheet">
 
+    <script language = "JavaScript">
+      function preloader()
+      {
+        heavyImage = new Image();
+        heavyImage.src = "img/header-bg.jpg";
+      }
+    </script>
+
   </head>
 
-  <body id="page-top">
+  <body onload="javascript:preloader()" id="page-top">
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
